@@ -1,6 +1,6 @@
-# Peacock CSS
-
 ![](https://github.com/BinaryBirds/peacock-css/blob/main/.github/assets/logo.png?raw=true)
+
+# Peacock CSS
 
 A lightweight, utility-first, modern CSS library.
 
