@@ -623,13 +623,6 @@ a:hover, a.selected:hover, a:visited:hover, .link-color-1 { color: #2ec04f; }
 a:visited, .link-color-2 { color: #4e4cd0; }
 a.selected, .link-color-3 { color: #a648d9; }
 
-.white-background { background: #fff; }
-.black-background { background: #000; }
-input[type=radio]:checked:after, input[type=checkbox]:checked:after, button, input[type=reset], input[type=submit], a.button, a.button:hover,
-.white-color { color: #fff; }
-.black-color { color: #000; }
-
-
 body, .background { background: #fff; }
 input, textarea, select, thead tr, .background-1 { background: #f0f0f6; }
 .background-2 { background: #e1e1e7; }
@@ -819,3 +812,10 @@ hr, .separator-s { border-bottom: 2px solid #e1e1e7; }
     hr, .separator-s { border-bottom: 2px solid #272729; }
     .separator-xs { border-bottom: 1px solid #272729; }
 }
+
+.white-background { background: #fff; }
+.black-background { background: #000; }
+input[type=radio]:checked:after, input[type=checkbox]:checked:after, button, input[type=reset], input[type=submit], a.button, a.button:hover,
+.white-color { color: #fff; }
+.black-color { color: #000; }
+
