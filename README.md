@@ -1,14 +1,31 @@
 # Peacock CSS
 
-A lightweight utility-first CSS framework for your design system.
+![](https://github.com/BinaryBirds/peacock-css/blob/main/.github/assets/logo.png?raw=true)
+
+A lightweight, utility-first, modern CSS library.
 
 ## Basics
 
-Peacock CSS follows an utility-first approach (inspired by [Tailwind CSS](https://tailwindcss.com)), but it's lightweight (only ~1k LoC) and gives you some neat helper tools to define your very own design system. It fully supports building responsive websites even in light and dark mode without any extra effort. 
+Peacock CSS follows an utility-first approach (inspired by [Tailwind CSS](https://tailwindcss.com)), but it's lightweight (uncompressed ~800 LoC, ~26kb, compressed: only ~4kb) and gives you some neat helper tools to define your very own design system. It fully supports building responsive websites even in light and dark mode without any extra effort. 
+
+- open-source 
+- free
+- lightweight 
+- minimalistic
+- modern
+- modular
+- responsive 
+- beautiful
 
 ### Installation
 
-Just use a standard HTML `link` tag to link Peacock CSS as an external stylesheet.
+You can use [jsDelivr](https://www.jsdelivr.com) to link Peacock CSS into your project:
+
+```
+https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.1/peacock.min.css
+```
+
+Just use a standard HTML `link` tag to link the library as an external stylesheet.
 
 ```html
 <!DOCTYPE html>
@@ -19,7 +36,7 @@ Just use a standard HTML `link` tag to link Peacock CSS as an external styleshee
 
     <title>Demo</title>
 
-	  <link rel="stylesheet" href="./css/peacock.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.1/peacock.min.css">
 </head>
 <body>
 
