@@ -1,7 +1,7 @@
 CUR_DIR = $(CURDIR)
 
 build:
-	cat css/peacock.css \
+	cat ./Assets/css/peacock.css \
 		| tr -d '\n' \
 		| tr -d '\t' \
 		| tr -s ' ' \
@@ -11,4 +11,4 @@ build:
 		| sed -E 's/[[:space:]]*\}[[:space:]]*/}/g' \
 		| sed -E 's/[[:space:]]*>[[:space:]]*/>/g' \
 		| sed -E 's/[[:space:]]*;[[:space:]]*/;/g' \
-		> peacock.min.css
+		> ./peacock.min.css

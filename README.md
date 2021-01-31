@@ -22,7 +22,7 @@ Peacock CSS follows an utility-first approach (inspired by [Tailwind CSS](https:
 You can use [jsDelivr](https://www.jsdelivr.com) to link Peacock CSS into your project:
 
 ```
-https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.1/peacock.min.css
+https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.3/peacock.min.css
 ```
 
 Just use a standard HTML `link` tag to link the library as an external stylesheet.
@@ -36,7 +36,7 @@ Just use a standard HTML `link` tag to link the library as an external styleshee
 
     <title>Demo</title>
 
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.1/peacock.min.css">
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.3/peacock.min.css">
 </head>
 <body>
 
@@ -64,7 +64,7 @@ After installing Peacock CSS, just use the available style classes to design you
 
     <title>Demo</title>
 
-	  <link rel="stylesheet" href="./css/peacock.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.3/peacock.min.css">
 </head>
 <body>
 
@@ -85,8 +85,8 @@ Peacock CSS resets all the margins and paddings on every element by default.
 
 ```css
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 ```
 
@@ -238,19 +238,19 @@ Justified text is not supported out of the box, because in 90% of the cases peop
 
 There are 5 other text size classes available as variants. Please note that these text sizes are not related to heading sizes.
 
-- `text-xl`
-- `text-l`
-- `text`
-- `text-s`
-- `text-xs`
+- `text-size-xl`
+- `text-size-l`
+- `text-size`
+- `text-size-s`
+- `text-size-xs`
 
 You can use a custom size in the following way:
 
 ```html
-<h2 class="text-xs">Extra small h2 text</h2>
+<h2 class="text-size-xs">Extra small h2 text</h2>
 ```
 
-Of course you can make a h2 look like a h1 by using the `h1` class instead of `text-xs`, feel free to try it out.
+Of course you can make a h2 look like a h1 by using the `h1` class instead of `text-size-xs`, feel free to try it out.
 
 ## Layout
 
@@ -348,7 +348,6 @@ Grids are responsive by default. The Desktop-Tablet-Mobile (DTM) system allows y
 
 **Fixed colum grids** 
 
-- `grid-1`
 - `grid-2`
 - `grid-3`
 - `grid-4`
@@ -643,13 +642,9 @@ Documentation is coming soon.
 **Sizes**
 
 - xl
-
 - l
-
 - normal
-
 - s
-
 - xs
 
 ```html
@@ -716,24 +711,6 @@ Colors may vary based on your interface color scheme (light mode, dark mode).
 
 The `color` proprety always refers to the foreground color of an element, the `background` class will set the background color value.
 
-**Black & white**
-
-- `white-color` 
-- `white-background`
-- `black-color`
-- `black-background`
-
-These colors won't change based on your environment (light mode, dark mode). 
-
-**Link colors**
-
-Link colors are used for hyperlink color values, they can vary based on your environment.
-
-- `link-color`
-- `link-color-1`
-- `link-color-2`
-- `link-color-3`
-
 **Gray**
 
 Gray color is available in six variations, they may vary based on your interface color scheme (light, dark)
@@ -756,10 +733,23 @@ It can be used as a background value as well.
 - `background-5`
 - `background-6`
 
+There is an available accent variant for each color and background value. 
+
+- `color-accent` looks good with `background`
+- `color-1-accent` looks good with `background-1`
+- `color-2-accent` looks good with `background-2`
+- `color-3-accent` looks good with `background-3`
+- `color-4-accent` looks good with `background-4`
+- `color-5-accent` looks good with `background-5`
+- `color-6-accent` looks good with `background-6`
+
+
 **Colors**
 
-The following color values are available for both light and dark mode with a slight difference. 
+The following color values are available for both light and dark mode with a slight difference (white and black are always white and black). 
 
+- white
+- black
 - blue
 - green
 - indigo
@@ -774,31 +764,35 @@ The following color values are available for both light and dark mode with a sli
 
 Foreground color values
 
-- `blue-color`
-- `green-color`
-- `indigo-color`
-- `orange-color`
-- `pink-color`
-- `purple-color`
-- `red-color`
-- `teal-color`
-- `yellow-color`
-- `brown-color`
-- `gray-color`
+- `color-white`
+- `color-black`
+- `color-blue`
+- `color-green`
+- `color-indigo`
+- `color-orange`
+- `color-pink`
+- `color-purple`
+- `color-red`
+- `color-teal`
+- `color-yellow`
+- `color-brown`
+- `color-gray`
 
 Background values
 
-- `blue-background`
-- `green-background`
-- `indigo-background`
-- `orange-background`
-- `pink-background`
-- `purple-background`
-- `red-background`
-- `teal-background`
-- `yellow-background`
-- `brown-background`
-- `gray-background`
+- `background-white`
+- `background-black`
+- `background-blue`
+- `background-green`
+- `background-indigo`
+- `background-orange`
+- `background-pink`
+- `background-purple`
+- `background-red`
+- `background-teal`
+- `background-yellow`
+- `background-brown`
+- `background-gray`
 
 
 
@@ -809,7 +803,7 @@ Background values
 Peacock CSS provides a responsive CSSS only hamburger menu by default.
 
 ```html
-<header id="header">
+<header>
   <a href="/" id="logo">
     <img src="images/logo-text.png">
   </a>
@@ -817,7 +811,7 @@ Peacock CSS provides a responsive CSSS only hamburger menu by default.
   <input type="checkbox" id="menu-button" class="selection-off" />
   <label for="menu-button" id="menu-icon" class="selection-off"><span></span></label>
 
-  <nav id="nav">
+  <nav class="nav">
     <li><a href="#" class="selected">Lorem ipsum</a></li>
     <li><a href="#">Lorem ipsum</a></li>
     <li><a href="#">Lorem ipsum</a></li>
@@ -840,17 +834,17 @@ You can set the display property of an element by using the following classes.
 
 For example: `<span class="display-block size-s margin text-align-center">💡</span>` 
 
-### Radius
+### Border radius
 
 It is possible to set the border radius of an element:
 
-`radius-full` - 9999px
-`radius-xl` 
-`radius-l`
-`radius`
-`radius-s`
-`radius-xs`
-`radius-zero` - 0px
+- `border-radius-full` - 9999px
+- `border-radius-xl` 
+- `border-radius-l`
+- `border-radius`
+- `border-radius-s`
+- `border-radius-xs`
+- `border-radius-zero` - 0px
 
 Radius values are responsive, except the full and zero variants.
 
@@ -870,12 +864,12 @@ There are some default shadow and inner-shadow values that you can use to enhanc
 
 **Inner shadow**
 
-- `shadow-inner-full`
-- `shadow-inner-xl`
-- `shadow-inner-l`
-- `shadow-inner`
-- `shadow-inner-s`
-- `shadow-inner-xs`
+- `inner-shadow-full`
+- `inner-shadow-xl`
+- `inner-shadow-l`
+- `inner-shadow`
+- `inner-shadow-s`
+- `inner-shadow-xs`
 
 Shadows are not responsive. 
 
@@ -886,15 +880,10 @@ You can rotate an element with the help of the rotation classes.
 **Values**
 
 - full - 90deg
-
 - xl - 60deg
-
 - l - 45deg
-
 - normal - 30 deg 
-
 - s - 15 deg
-
 - xs - 5deg
 
 **Left**
@@ -922,10 +911,9 @@ You can rotate an element with the help of the rotation classes.
 The rotate-zero class will reset the previous rotation back to zero degree.
 
 
-
 ### Border
 
-There are 6 border variations based on the default gray color.
+There are solid style border variations for every direction (direction is optional) in different with variants:
 
 - `border-xl`
 - `border-l`
@@ -933,63 +921,22 @@ There are 6 border variations based on the default gray color.
 - `border-s`
 - `border-xs`
 
+- `border-[direction]-xl`
+- `border-[direction]-l`
+- `border-[direction]`
+- `border-[direction]-s`
+- `border-[direction]-xs`
 
+Directions: `top`, `bottom`, `left`, `right`
 
-- `border-1-xl`
-- `border-1-l`
-- `border-1`
-- `border-1-s`
-- `border-1-xs`
+You can use the standard color values to set the color of the border, e.g.: 
 
+- `border-color-1`
+- `border-color-red`
 
+You can create a separator by combining the border classes:
 
-- `border-2-xl`
-- `border-2-l`
-- `border-2`
-- `border-2-s`
-- `border-2-xs`
-
-
-
-- `border-3-xl`
-- `border-3-l`
-- `border-3`
-- `border-3-s`
-- `border-3-xs`
-
-
-
-- `border-4-xl`
-- `border-4-l`
-- `border-4`
-- `border-4-s`
-- `border-4-xs`
-
-
-
-- `border-5-xl`
-- `border-5-l`
-- `border-5`
-- `border-5-s`
-- `border-5-xs`
-
-
-
-- `border-6-xl`
-- `border-6-l`
-- `border-6`
-- `border-6-s`
-- `border-6-xs`
-
-### Separator
-
-A separator is essentailly a gray line (border-bottom value) that looks great both on light and dark interface.
-
-- `separator-xl `
-- `separator-l`
-- `separator`
-- `separator-s`
-- `separator-xs`
+- `border-bottom-xs border-color-accent`
 
 ### Selection
 
@@ -998,3 +945,25 @@ It is possible to display the selection from an element by using the `selection-
 ### List style 
 
 It is possible to disable the list style markers by using the `list-style-off` class.
+
+## Custom color style
+
+You should override the following values to setup a custom style for your site (don't forget to update these values to support dark mode as well).
+
+```css
+body { color: #333333; background-color: #fafafa; }
+a { color: #006fff; }
+a:hover, a.selected:hover, a:visited:hover { color: #2ec04f; }
+a:visited { color: #4e4cd0; }
+a.selected { color: #a648d9; }
+input, textarea, select { color: #333333; background-color: #ffffff; border: 2px solid #e0e0e0; }
+input:focus, textarea:focus, select:focus { border: 2px solid #838383; }
+input[type=radio]:checked:after, input[type=checkbox]:checked:after, input[type=reset], input[type=submit], a.button, button { color: #ffffff; background-color: #006fff;}
+input[type=reset]:hover, input[type=submit]:hover, a.button:hover, button:hover { color: #ffffff; background-color: #2ec04f; }
+#menu-icon span, #menu-icon span:before, #menu-icon span:after { background-color: #e0e0e0; }
+thead tr { background-color: #ffffff; }
+
+@media (prefers-color-scheme: dark) {
+    /* use the same selectors for dark mode */
+}
+```

@@ -1,0 +1,207 @@
+body { color: #333333; background-color: #fafafa; }
+a { color: #006fff; }
+a:hover, a.selected:hover, a:visited:hover { color: #2ec04f; }
+a:visited { color: #4e4cd0; }
+a.selected { color: #a648d9; }
+input, textarea, select { color: #333333; background-color: #ffffff; border: 2px solid #e0e0e0; }
+input:focus, textarea:focus, select:focus { border: 2px solid #838383; }
+input[type=radio]:checked:after, input[type=checkbox]:checked:after, input[type=reset], input[type=submit], a.button, button { color: #ffffff; background-color: #006fff;}
+input[type=reset]:hover, input[type=submit]:hover, a.button:hover, button:hover { color: #ffffff; background-color: #2ec04f; }
+#menu-icon span, #menu-icon span:before, #menu-icon span:after { background-color: #e0e0e0; }
+thead tr { background-color: #ffffff; }
+
+.color { color: #ffffff; }
+.color-1 { color: #fafafa; }
+.color-2 { color: #f5f5f5; }
+.color-3 { color: #f0f0f0; }
+.color-4 { color: #ebebeb; }
+.color-5 { color: #e6e6e6; }
+.color-6 { color: #e0e0e0; }
+.color-accent { color: #000000; }
+.color-1-accent { color: #4d4d4d; }
+.color-2-accent { color: #404040; }
+.color-3-accent { color: #333333; }
+.color-4-accent { color: #262626; }
+.color-5-accent { color: #1a1a1a; }
+.color-6-accent { color: #0d0d0d; }
+.color-white { color: #ffffff; }
+.color-black { color: #000000; }
+.color-blue { color: #006fff; }
+.color-green { color: #2ec04f; }
+.color-indigo { color: #4e4cd0; }
+.color-orange { color: #ff8a00; }
+.color-pink { color: #ff284b; }
+.color-purple { color: #a648d9; }
+.color-red { color: #ff342a; }
+.color-teal { color: #50c1f9; }
+.color-yellow { color: #ffc500; }
+.color-brown { color: #987953; }
+.color-gray { color: #838388; }
+
+.background, .button.background { background-color: #ffffff; }
+.background-1, .button.background-1 { background-color: #fafafa; }
+.background-2, .button.background-2 { background-color: #f5f5f5; }
+.background-3, .button.background-3 { background-color: #f0f0f0; }
+.background-4, .button.background-4 { background-color: #ebebeb; }
+.background-5, .button.background-5 { background-color: #e6e6e6; }
+.background-6, .button.background-6 { background-color: #e0e0e0; }
+.background-accent, .button.background-accent { background-color: #000000; }
+.background-1-accent, .button.background-1-accent { background-color: #4d4d4d; }
+.background-2-accent, .button.background-2-accent { background-color: #404040; }
+.background-3-accent, .button.background-3-accent { background-color: #333333; }
+.background-4-accent, .button.background-4-accent { background-color: #262626; }
+.background-5-accent, .button.background-5-accent { background-color: #1a1a1a; }
+.background-6-accent, .button.background-6-accent { background-color: #0d0d0d; }
+.background-white, .button.background-white { background-color: #ffffff; }
+.background-black, .button.background-black { background-color: #000000; }
+.background-blue, .button.background-blue { background-color: #006fff; }
+.background-green, .button.background-green { background-color: #2ec04f; }
+.background-indigo, .button.background-indigo { background-color: #4e4cd0; }
+.background-orange, .button.background-orange { background-color: #ff8a00; }
+.background-pink, .button.background-pink { background-color: #ff284b; }
+.background-purple, .button.background-purple { background-color: #a648d9; }
+.background-red, .button.background-red { background-color: #ff342a; }
+.background-teal, .button.background-teal { background-color: #50c1f9; }
+.background-yellow, .button.background-yellow { background-color: #ffc500; }
+.background-brown, .button.background-brown { background-color: #987953; }
+.background-gray, .button.background-gray { background-color: #838388; }
+
+.background-blue-accent, .button.background-blue:hover { background-color: #0024D4; }
+.background-green-accent, .button.background-green:hover { background-color: #217A2E; }
+.background-indigo-accent, .button.background-indigo:hover { background-color: #282092; }
+.background-orange-accent, .button.background-orange:hover { background-color: #BB2104; }
+.background-pink-accent, .button.background-pink:hover { background-color: #C60035; }
+.background-purple-accent, .button.background-purple:hover { background-color: #752C9A; }
+.background-red-accent, .button.background-red:hover { background-color: #CA0012; }
+.background-teal-accent, .button.background-teal:hover { background-color: #0B5D93; }
+.background-yellow-accent, .button.background-yellow:hover { background-color: #8E4803; }
+.background-brown-accent, .button.background-brown:hover { background-color: #6C5235; }
+.background-gray-accent, .button.background-gray:hover { background-color: #56565B; }
+
+.border-color { border-color: #ffffff; }
+.border-color-1 { border-color: #fafafa; }
+.border-color-2 { border-color: #f5f5f5; }
+.border-color-3 { border-color: #f0f0f0; }
+.border-color-4 { border-color: #ebebeb; }
+.border-color-5 { border-color: #e6e6e6; }
+.border-color-6 { border-color: #e0e0e0; }
+.border-color-accent { border-color: #000000; }
+.border-color-1-accent { border-color: #4d4d4d; }
+.border-color-2-accent { border-color: #404040; }
+.border-color-3-accent { border-color: #333333; }
+.border-color-4-accent { border-color: #262626; }
+.border-color-5-accent { border-color: #1a1a1a; }
+.border-color-6-accent { border-color: #0d0d0d; }
+.border-color-white { border-color: #ffffff; }
+.border-color-black { border-color: #000000; }
+.border-color-blue { border-color: #006fff; }
+.border-color-green { border-color: #2ec04f; }
+.border-color-indigo { border-color: #4e4cd0; }
+.border-color-orange { border-color: #ff8a00; }
+.border-color-pink { border-color: #ff284b; }
+.border-color-purple { border-color: #a648d9; }
+.border-color-red { border-color: #ff342a; }
+.border-color-teal { border-color: #50c1f9; }
+.border-color-yellow { border-color: #ffc500; }
+.border-color-brown { border-color: #987953; }
+.border-color-gray { border-color: #838388; }
+
+@media (prefers-color-scheme: dark) {
+    
+    body { color: #ebebeb; background-color: #0d0d0d; }
+    a { color: #0d79ff; }
+    a:hover, a.selected:hover, a:visited:hover { color: #2acb4e; }
+    a:visited { color: #5352e2; }
+    a.selected { color: #b750f0; }
+    input, textarea, select { color: #ebebeb; background-color: #000000; border: 2px solid #4d4d4d; }
+    input:focus, textarea:focus, select:focus { border: 2px solid #838383; }
+    input[type=radio]:checked:after, input[type=checkbox]:checked:after, input[type=reset], input[type=submit], a.button, button { color: #ffffff; background-color: #0d79ff;}
+    input[type=reset]:hover, input[type=submit]:hover, a.button:hover, button:hover { color: #ffffff; background-color: #2acb4e; }
+    #menu-icon span, #menu-icon span:before, #menu-icon span:after { background-color: #4d4d4d; }
+    thead tr { background-color: #000000; }
+    
+    .color { color: #000000; }
+    .color-1 { color: #0d0d0d; }
+    .color-2 { color: #1a1a1a; }
+    .color-3 { color: #262626; }
+    .color-4 { color: #333333; }
+    .color-5 { color: #404040; }
+    .color-6 { color: #4d4d4d; }
+    .color-accent { color: #ffffff; }
+    .color-1-accent { color: #e0e0e0; }
+    .color-2-accent { color: #e6e6e6; }
+    .color-3-accent { color: #ebebeb; }
+    .color-4-accent { color: #f0f0f0; }
+    .color-5-accent { color: #f5f5f5; }
+    .color-6-accent { color: #fafafa; }
+    .color-white { color: #ffffff; }
+    .color-black { color: #000000; }
+    .color-blue { color: #0d79ff; }
+    .color-green { color: #2acb4e; }
+    .color-indigo { color: #5352e2; }
+    .color-orange { color: #ff950d; }
+    .color-pink { color: #ff3054; }
+    .color-purple { color: #b750f0; }
+    .color-red { color: #ff3c33; }
+    .color-teal { color: #59ccff; }
+    .color-yellow { color: #ffd00d; }
+    .color-brown { color: #a2835d; }
+    .color-gray { color: #8d8d92; }
+
+    .background, .button.background { background-color: #000000; }
+    .background-1, .button.background-1 { background-color: #0d0d0d; }
+    .background-2, .button.background-2 { background-color: #1a1a1a; }
+    .background-3, .button.background-3 { background-color: #262626; }
+    .background-4, .button.background-4 { background-color: #333333; }
+    .background-5, .button.background-5 { background-color: #404040; }
+    .background-6, .button.background-6 { background-color: #4d4d4d; }
+    .background-accent, .button.background-accent { background-color: #ffffff; }
+    .background-1-accent, .button.background-1-accent { background-color: #e0e0e0; }
+    .background-2-accent, .button.background-2-accent { background-color: #e6e6e6; }
+    .background-3-accent, .button.background-3-accent { background-color: #ebebeb; }
+    .background-4-accent, .button.background-4-accent { background-color: #f0f0f0; }
+    .background-5-accent, .button.background-5-accent { background-color: #f5f5f5; }
+    .background-6-accent, .button.background-6-accent { background-color: #fafafa; }
+    .background-white, .button.background-white { background-color: #ffffff; }
+    .background-black, .button.background-black { background-color: #000000; }
+    .background-blue, .button.background-blue { background-color: #0d79ff; }
+    .background-green, .button.background-green { background-color: #2acb4e; }
+    .background-indigo, .button.background-indigo { background-color: #5352e2; }
+    .background-orange, .button.background-orange { background-color: #ff950d; }
+    .background-pink, .button.background-pink { background-color: #ff3054; }
+    .background-purple, .button.background-purple { background-color: #b750f0; }
+    .background-red, .button.background-red { background-color: #ff3c33; }
+    .background-teal, .button.background-teal { background-color: #59ccff; }
+    .background-yellow, .button.background-yellow { background-color: #ffd00d; }
+    .background-brown, .button.background-brown { background-color: #a2835d; }
+    .background-gray, .button.background-gray { background-color: #8d8d92; }
+    
+    .border-color { border-color: #000000; }
+    .border-color-1 { border-color: #0d0d0d; }
+    .border-color-2 { border-color: #1a1a1a; }
+    .border-color-3 { border-color: #262626; }
+    .border-color-4 { border-color: #333333; }
+    .border-color-5 { border-color: #404040; }
+    .border-color-6 { border-color: #4d4d4d; }
+    .border-color-accent { border-color: #ffffff; }
+    .border-color-1-accent { border-color: #e0e0e0; }
+    .border-color-2-accent { border-color: #e6e6e6; }
+    .border-color-3-accent { border-color: #ebebeb; }
+    .border-color-4-accent { border-color: #f0f0f0; }
+    .border-color-5-accent { border-color: #f5f5f5; }
+    .border-color-6-accent { border-color: #fafafa; }
+    .border-color-white { border-color: #ffffff; }
+    .border-color-black { border-color: #000000; }
+    .border-color-blue { border-color: #0d79ff; }
+    .border-color-green { border-color: #2acb4e; }
+    .border-color-indigo { border-color: #5352e2; }
+    .border-color-orange { border-color: #ff950d; }
+    .border-color-pink { border-color: #ff3054; }
+    .border-color-purple { border-color: #b750f0; }
+    .border-color-red { border-color: #ff3c33; }
+    .border-color-teal { border-color: #59ccff; }
+    .border-color-yellow { border-color: #ffd00d; }
+    .border-color-brown { border-color: #a2835d; }
+    .border-color-gray { border-color: #8d8d92; }
+
+}

@@ -1,0 +1,84 @@
+
+input, textarea, select, button, input[type=reset], input[type=submit], fieldset {
+    display: block;
+    font: inherit;
+    line-height: inherit;
+    box-sizing: border-box;
+    transition: 0.2s;
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+}
+fieldset {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+fieldset legend {
+    padding: 0 0.25rem;
+}
+input[type=radio], input[type=checkbox] {
+    display: inline-block;
+    padding: 0.5rem;
+    position: relative;
+    vertical-align: text-top;
+    cursor: pointer;
+    margin-right: 0.25rem;
+}
+input[type="checkbox"], input[type="checkbox"] + label, input[type="radio"], input[type="radio"] + label {
+    cursor: pointer;
+}
+input[type=radio], input[type=radio]:checked:after {
+    border-radius: 50%;
+}
+input[type=radio]:checked:after, input[type=checkbox]:checked:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+input[type=checkbox]:checked:after {
+    border-radius: 0.125em;
+}
+button, input[type=reset], input[type=submit], .button {
+    cursor: pointer;
+    border: none;
+    padding: 0.25rem 1.5rem;
+}
+.button {
+    display: inline-block;
+    border-radius: 0.25rem;
+}
+input[type=file] {
+    font-size: 16px;
+    line-height: 0;
+}
+input, input:focus, textarea, select, datalist {
+    outline: none;
+    -webkit-appearance: none;
+}
+select:not([multiple]) {
+    padding-right: 2rem;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+    background-position: right 1rem top 0.9rem, right 0.75rem top 0.9rem;
+    background-size: 0.25rem 0.25rem, 0.25rem 0.25rem;
+}
+textarea {
+    font: inherit;
+    display: block;
+    resize: none;
+}
+textarea.xl { height: 20rem; }
+textarea.l { height: 12rem; }
+textarea { height: 8rem; }
+textarea.s { height: 6rem; }
+textarea.xs { height: 4rem; }
+
+@media screen and (min-width: 1200px) {
+    input[type=radio], input[type=checkbox] {
+        vertical-align: sub;
+    }
+}
