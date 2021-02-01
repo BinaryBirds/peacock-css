@@ -1,0 +1,10 @@
+a { color: blue; }
+a:hover, a.selected:hover, a:visited:hover { color: green; }
+a:visited { color: purple; }
+a.selected { color: orange; }
+input, textarea, select { color: #333333; background-color: #ffffff; border: 2px solid #e0e0e0; }
+input:focus, textarea:focus, select:focus { border: 2px solid #838383; }
+input[type=radio]:checked:after, input[type=checkbox]:checked:after, input[type=reset], input[type=submit], a.button, button { color: #ffffff; background-color: #006fff;}
+input[type=reset]:hover, input[type=submit]:hover, a.button:hover, button:hover { color: #ffffff; background-color: #2ec04f; }
+#menu-icon span, #menu-icon span:before, #menu-icon span:after { background-color: #e0e0e0; }
+thead tr { background-color: #ffffff; }

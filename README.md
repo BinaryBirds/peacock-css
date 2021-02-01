@@ -22,7 +22,7 @@ Peacock CSS follows an utility-first approach (inspired by [Tailwind CSS](https:
 You can use [jsDelivr](https://www.jsdelivr.com) to link Peacock CSS into your project:
 
 ```
-https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.3/peacock.min.css
+https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.4/peacock.min.css
 ```
 
 Just use a standard HTML `link` tag to link the library as an external stylesheet.
