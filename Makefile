@@ -1,7 +1,8 @@
 CUR_DIR = $(CURDIR)
 
 build:
-	cat ./Assets/css/peacock.css \
+	cat ./Public/css/peacock.css \
+		\
 		| tr -d '\n' \
 		| tr -d '\t' \
 		| tr -s ' ' \

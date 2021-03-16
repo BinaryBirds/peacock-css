@@ -1,0 +1,59 @@
+#let(admin = true)
+#define(main):
+
+<style>
+    tr {
+        grid-template-columns: 1fr 1fr;
+    }
+    @media screen and (min-width: 600px) {
+        tr {
+            grid-template-columns: 1fr 1fr 4rem 4rem;
+        }
+    }
+
+</style>
+
+<div class="lead">
+
+    <h1>Variables</h1>
+    <a href="/" class="">Create new</a>
+
+</div>
+
+<form>
+   <section>
+       <input type="text" placeholder="Search...">
+   </section>
+</form>
+
+<!--<div class="lead container center">-->
+<!--    <span class="icon">🤷‍♂️</span>-->
+<!--    <h1>Empty</h1>-->
+<!--    <p>There are no results for this search query.</p>-->
+<!--    <a href="/" class="button">Try again</a>-->
+<!--</div>-->
+
+<table>
+    <thead>
+        <tr>
+            <td class="field"><a href="#">Title ▴</a></td>
+            <td class="field last"><a href="#">Description</a></td>
+            <td class="action">Edit</td>
+            <td class="action">Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        #for(i in [1,2,3,4,5,6,7,8,9,10]):
+        <tr>
+            <td class="field"><a href="#">Lorem ipsum</a></td>
+            <td class="field last"><a href="#">Lorem ipsum</a></td>
+            <td class="action"><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></td>
+            <td class="action"><a href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></td>
+        </tr>
+        #endfor
+    </tbody>
+</table>
+
+#enddefine
+
+#inline("index")

@@ -1,0 +1,39 @@
+#define(main):
+<div class="lead container">
+    <h1>Weekly Swift articles</h1>
+    <p>About server side and iOS application development using Swift.</p>
+</div>
+
+<div class="container">
+    
+    <form style="margin-bottom: var(--space-3xl);">
+        <section>
+            <input type="text" placeholder="Search post...">
+        </section>
+    </form>
+
+    #for(i in [1,2,3,4,5,6,7,8,9]):
+    <a href="/articles/" class="card">
+        <img src="/images/articles/0#(i).jpg">
+        <div class="content">
+            <div class="text">
+                <h2>Lorem ipsum dolor sit amet</h2>
+                <p>Nulla faucibus viverra leo, quis mauris tempor ut. Donec vulputate orci a faucibus rutrum.</p>
+            </div>
+
+            <div class="meta">
+                <span class="date">11/03/2021</span>
+                <div class="tags">
+                    <span style="color: #21a9ff;">Swift</span> ·
+                    <span style="color: #21a9ff;">Vapor</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </a>
+    #endfor
+
+</div>
+#enddefine
+
+#inline("index")

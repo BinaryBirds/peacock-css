@@ -1,0 +1,33 @@
+#define(main):
+<div class="lead">
+    <h1>Swift tutorials</h1>
+    <p>Weekly articles about iOS and server side Swift development.</p>
+    <a href="#" class="butto">Read more</a>
+</div>
+
+<div class="grid-321 grid-6">
+
+    #for(i in [1,2,3,4,5,6,7,8,9]):
+    <a href="/articles/" class="card">
+        <img src="/images/articles/0#(i).jpg">
+        <div class="content">
+            <div class="text">
+                <h2>Building static and dynamic libraries using the Swift compiler</h2>
+                <p>Nulla faucibus viverra leo, quis mauris tempor ut. Donec vulputate orci a faucibus rutrum.</p>
+            </div>
+            <div class="meta">
+                <span class="date">11/03/2021</span>
+                <div class="tags">
+                    <span style="color: #DE2451;">Swift</span> ·
+                    <span style="color: #DE2451;">Vapor</span>
+                </div>
+            
+            </div>
+        </div>
+    </a>
+    
+    #endfor
+</div>
+#enddefine
+
+#inline("index")

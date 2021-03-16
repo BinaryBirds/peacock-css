@@ -1,28 +1,22 @@
-![](https://github.com/BinaryBirds/peacock-css/blob/main/.github/assets/logo.png?raw=true)
+![](https://github.com/BinaryBirds/peacock-css/blob/main/Public/images/logo-text.png?raw=true)
 
 # Peacock CSS
 
-A lightweight, utility-first, modern CSS library.
+Peacock is a modern, responsive CSS boilerplate library to kickstart any web-based project. 
 
-## Basics
+It is simple, lightweight and it contains all the basic components required to build a modern web page.
 
-Peacock CSS follows an utility-first approach (inspired by [Tailwind CSS](https://tailwindcss.com)), but it's lightweight (uncompressed ~800 LoC, ~26kb, compressed: only ~4kb) and gives you some neat helper tools to define your very own design system. It fully supports building responsive websites even in light and dark mode without any extra effort. 
+Inspired by [Skeleton CSS](http://getskeleton.com)
 
-- open-source 
-- free
-- lightweight 
-- minimalistic
-- modern
-- modular
-- responsive 
-- beautiful
+Compatible with [Normalize.css](https://necolas.github.io/normalize.css/)
+
 
 ### Installation
 
 You can use [jsDelivr](https://www.jsdelivr.com) to link Peacock CSS into your project:
 
 ```
-https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.4/peacock.min.css
+https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.6/peacock.min.css
 ```
 
 Just use a standard HTML `link` tag to link the library as an external stylesheet.
@@ -35,62 +29,18 @@ Just use a standard HTML `link` tag to link the library as an external styleshee
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Demo</title>
-
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.3/peacock.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.6/peacock.min.css">
 </head>
 <body>
-
-    <div class="container margin-top">
+    <main>
         <h1>Hello world!</h1>
         <p>This is a simple Peacock CSS demo.</p>
-    </div>
-
+    </main>
 </body>
 </html>
 ```
 
 You should always use the minified version and it is also recommended to use a CDN server.
-
-### Demo
-
-After installing Peacock CSS, just use the available style classes to design your HTML document.
-
-```html
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Demo</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.3/peacock.min.css">
-</head>
-<body>
-
-    <div class="container margin-top">
-        <h1>Hello world!</h1>
-        <p>This is a simple Peacock CSS demo.</p>
-    </div>
-
-</body>
-</html>
-```
-
-Scroll down to read more about the basic concepts and the available classes. 
-
-### Reset
-
-Peacock CSS resets all the margins and paddings on every element by default.
-
-```css
-* {
-    margin: 0;
-    padding: 0;
-}
-```
-
-Some other default HTML elements are also custom styled, you can read more about them in later sections.
 
 ### Breakpoints
 
@@ -176,7 +126,7 @@ html {
 }
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    line-height: 1.5rem;   
+    line-height: 1.5rem;
 }
 ```
 
@@ -184,7 +134,7 @@ If you want to use a custom font, you should override the font-family property o
 
 ### Headings
 
-The following heading sizes are available in Peacock CSS:
+The following heading sizes are styled in Peacock CSS:
 
 - `h1`
 - `h2`
@@ -193,13 +143,6 @@ The following heading sizes are available in Peacock CSS:
 - `h5`
 - `h6`
 
-Default HTML headings are stylish by default, but you can also use a custom element with a heading class:
-
-```html
-<span class="h1">This looks like a H1, but it's ok from a SEO perspective</span>
-```
-
-Headings and paragraphs only have top margins if they have an other element before it.
 
 ### Paragraphs
 
@@ -234,59 +177,25 @@ You can align text related content with the help of the following three classes.
 
 Justified text is not supported out of the box, because in 90% of the cases people don't use proper hyphenation, so justified text looks real bad. 
 
-### Text size
-
-There are 5 other text size classes available as variants. Please note that these text sizes are not related to heading sizes.
-
-- `text-size-xl`
-- `text-size-l`
-- `text-size`
-- `text-size-s`
-- `text-size-xs`
-
-You can use a custom size in the following way:
-
-```html
-<h2 class="text-size-xs">Extra small h2 text</h2>
-```
-
-Of course you can make a h2 look like a h1 by using the `h1` class instead of `text-size-xs`, feel free to try it out.
 
 ## Layout
 
-### Wrapper
+### Containers
 
-A wrapper is something that wraps a group of HTML elements together. It always renders as a block element and uses a relative position. It will hide overflowed content by default and it'll clear all `float` properties.
-
-- `wrapper-full` - full width on all device sizes
-- `wrapper-xl` - extra large size on high res devices, full width on smaller devices
-- `wrapper-l` - large size on high res devices, full width on small devices
-- `wrapper` - preferred wrapper size (use this if possible)
-- `wrapper-s` - small wrapper
-- `wrapper-xs` - extra small wrapper, even on mobile devices
-
-Wrappers are responsive by default, they are very useful if you want to wrap elements without further alignment, but if you prefer center aligned containers, you should use the `container` class.
-
-### Container
-
-Containers are center aligned wrappers. Basically they have the same properties, with an extra auto left and right margin. 
-
-- `container-full` - full width on all device sizes
-- `container-xl` - extra large size on high res devices, full width on smaller devices
-- `container-l` - large size on high res devices, full width on small devices
-- `container` - preferred container size (use this if possible)
-- `container-s` - small container
-- `container-xs` - extra small container, even on mobile devices
+ - `lead` - lead element for displaying a separate h1 and p element
+- `container` - preferred container size for reading textual content (responsive)
 
 It is really simple to create a container element.
 
 ```html
-<div class="container">
-	<h1>Title</h1>
+<div class="lead">
+    <h1>Title</h1>
+    <p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. </p>
+</div>
 
+<div class="container">
 	<h2>Subtitle</h2>
 
-	<h2 class="text-xs">Extra small h2 text</h2>
 	<p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies. Cras imperdiet ligula eu eros faucibus cursus. Quisque aliquam suscipit justo a sollicitudin. Sed vitae purus erat. Vivamus bibendum vel leo at hendrerit. Pellentesque auctor at nisi non tempor. Suspendisse eget posuere libero. Quisque interdum nunc non turpis lobortis hendrerit. Integer maximus varius metus nec tempor. Duis volutpat ligula eu elementum imperdiet. Nunc elit libero, hendrerit ornare fermentum id, ultricies eu quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
 	<h3>Other sub-sub-title</h3>
@@ -294,53 +203,8 @@ It is really simple to create a container element.
 </div>
 
 ```
-
 The container used in the snippet above will scale based on your screen size. The content inside of it will be positioned in the middle of the screen.
 
-#### Container size reference
-
-**Default:**
-
-```css
-.wrapper-full, .container-full { width: 100%; }
-.wrapper-xl, .container-xl { max-width: 960px; }
-.wrapper-l, .container-l { max-width: 800px; }
-.wrapper, .container { max-width: 640px; }
-.wrapper-s, .container-s { max-width: 480px; }
-.wrapper-xs, .container-xs { max-width: 320px; }
-```
-
-**900-1199**
-
-```css
-.wrapper-xl, .container-xl { max-width: 900px; }
-.wrapper-l, .container-l { max-width: 804px; }
-.wrapper, .container { max-width: 756px; }
-.wrapper-s, .container-s { max-width: 640px; }
-.wrapper-xs, .container-xs { max-width: 480px; }    
-```
-
-**1200-1790**
-
-```css
-.wrapper-xl, .container-xl { max-width: 1080px; }
-.wrapper-l, .container-l { max-width: 960px; }
-.wrapper, .container { max-width: 800px; }
-.wrapper-s, .container-s { max-width: 756px; }
-.wrapper-xs, .container-xs { max-width: 640px; }
-```
-
-**1800+**
-
-```css
-.wrapper-xl, .container-xl { max-width: 1440px; }
-.wrapper-l, .container-l { max-width: 1280px; }
-.wrapper, .container { max-width: 1080px; }
-.wrapper-s, .container-s { max-width: 960px; }
-.wrapper-xs, .container-xs { max-width: 800px; }
-```
-
-Text will look great when using default container elements. Note that average character per line (CPL) values will be usually good when using a container or smaller. Larger containers should be used to contain other elements, but If you want to support multiple column layouts, you should choose a grid over a container.
 
 ### Grid
 
@@ -353,12 +217,7 @@ Grids are responsive by default. The Desktop-Tablet-Mobile (DTM) system allows y
 - `grid-4`
 - `grid-5`
 - `grid-6`
-- `grid-7`
-- `grid-8`
 - `grid-9`
-- `grid-10`
-- `grid-11`
-- `grid-12`
 
 The number suffix represents the number of columns on every screen.
 
@@ -366,113 +225,56 @@ The number suffix represents the number of columns on every screen.
 
 2-column-based responsive grids:
 
-- `grid-211` - 2 columns on desktop, 1 column on tablet and mobile screens
 - `grid-221` - 2 columns on desktop, tablet, 1 column on mobile screens
 
 3-column-based responsive grids:
 
-- `grid-311` - 3 columns on desktop, 1 column on tablet and  mobile screens
 - `grid-321` - 3 columns on desktop, 2 column on tablet, 1 column on mobile screens
 
 4-column-based responsive grids:
 
-- `grid-411` - 4 columns on desktop, 1 column on tablet and mobile screens
 - `grid-421` - 4 columns on desktop, 2 columns on tablet, 1 column on mobile screens
-- `grid-431` - 4 columns on desktop, 3 columns on tablet, 1 column on mobile screens
-- `grid-432` - 4 columns on desktop, 3 columns on tablet, 2 column on mobile screens
 
-5-column-based responsive grids:
 
-- `grid-521` - 5 columns on desktop, 2 columns on tablet, 1 column on mobile screens
-- `grid-531` - 5 columns on desktop, 3 columns on tablet, 1 column on mobile screens
-- `grid-532` - 5 columns on desktop, 3 columns on tablet, 2 columns on mobile screens
-
-The most common use-case is a 321 grid. Here's a feature box example:
+The most common use-case is a 321 grid. Here's a quick feature box example:
 
 ```html
-<div class="container">
-	<div class="grid-321">
-		<div class="grid-col-1">
-			<span class="h1">🦚</span>
-			<h3 class="margin-top-zero">Feature</h3>
-			<p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
-		</div>
-		<div class="grid-col-1">
-			<span class="h1">🦚</span>
-			<h3 class="margin-top-zero">Feature</h3>
-			<p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
-		</div>
-		<div class="grid-col-1">
-			<span class="h1">🦚</span>
-			<h3 class="margin-top-zero">Feature</h3>
-			<p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
-		</div>
-		
-		<div class="grid-col-1">
-			<span class="h1">🦚</span>
-			<h3 class="margin-top-zero">Feature</h3>
-			<p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
-		</div>
-		<div class="grid-col-1">
-			<span class="h1">🦚</span>
-			<h3 class="margin-top-zero">Feature</h3>
-			<p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
-		</div>
-		<div class="grid-col-1">
-			<span class="h1">🦚</span>
-			<h3 class="margin-top-zero">Feature</h3>
-			<p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
-		</div>
-		
-	</div>
+<div class="grid-321">
+    <div>
+        <span class="icon">🦚</span>
+        <h3>Feature</h3>
+        <p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
+    </div>
+    <div>
+        <span class="icon">🦚</span>
+        <h3>Feature</h3>
+        <p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
+    </div>
+    <div>
+        <span class="icon">🦚</span>
+        <h3>Feature</h3>
+        <p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
+    </div>
+    <div>
+        <span class="icon">🦚</span>
+        <h3>Feature</h3>
+        <p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
+    </div>
+    <div>
+        <span class="icon">🦚</span>
+        <h3>Feature</h3>
+        <p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
+    </div>
+    <div>
+        <span class="icon">🦚</span>
+        <h3>Feature</h3>
+        <p>Suspendisse sit amet ante scelerisque, cursus arcu eu, consequat ex. Nullam euismod eros in consequat ultricies.</p>
+    </div>
 </div>
+
 ```
 
-Please note that you have to use a `grid-col-[x]` class to specify the size of an element in a grid. Usually the best practice is to define a responzive DTM system-based grid and then use `grid-col-1` to span a 1 column wide item.
-
-- `grid-col-1` - 1 column wide item
-- `grid-col-2` - 2 column wide item
-- `grid-col-3` - 3 column wide item
-- `grid-col-4` - 4 column wide item
-- `grid-col-5` - 5 column wide item
-- `grid-col-6` - 6 column wide item
-- `grid-col-7` - 7 column wide item
-- `grid-col-8` - 8 column wide item
-- `grid-col-9` - 9 column wide item
-- `grid-col-10` - 10 column wide item
-- `grid-col-11` - 11 column wide item
-- `grid-col-12` - 12 column wide item
-
-It is also possible to specify the gap between the columns and rows.
-
-**Column gap**
-
-- `grid-gap-col-xl`
-- `grid-gap-col-l`
-- `grid-gap-col`
-- `grid-gap-col-s`
-- `grid-gap-col-xs`
-- `grid-gap-col-zero`
-
-**Row gap**
-
-- `grid-gap-row-xl`
-- `grid-gap-row-l`
-- `grid-gap-row`
-- `grid-gap-row-s`
-- `grid-gap-row-xs`
-- `grid-gap-row-zero`
-
-**Column and row gap**
-
-- `grid-gap-xl`
-- `grid-gap-l`
-- `grid-gap`
-- `grid-gap-s`
-- `grid-gap-xs`
-- `grid-gap-zero`
-
-You have to set the gap class with a grid type, for example `<div class="grid-321 grid-gap-xl">`. This grid will use an extra large gap between the elements. Or `<div class="grid-432 grid-gap-col-s grid-gap-row-l">` small column gap and large row gap.
+The grid column span is 1 for every child element inside the grid. You can override this behavior with the column gap and row gap as well.
 
 #### Dividing grids
 
@@ -485,20 +287,20 @@ Tables rows are displayed as grids in Peacock CSS. It is possible to override th
 ```html
 <table>
 	<thead>
-	    <tr class="grid-311">
+	    <tr class="grid-321">
 	        <td>1</td>
 	        <td>2</td>
 	        <td>3</td>
 	    </tr>
 	</thead>
 	<tbody>
-	    <tr class="grid-311">
+	    <tr class="grid-321">
 	        <td>a</td>
 	        <td>b</td>
 	        <td>c</td>
 	        
 	    </tr>
-	    <tr class="grid-311">
+	    <tr class="grid-321">
 	        <td>d</td>
 	        <td>e</td>
 	        <td>f</td>
@@ -508,102 +310,44 @@ Tables rows are displayed as grids in Peacock CSS. It is possible to override th
 </table>
 ```
 
-You can use different grid classes for each row.
+You can use different grid classes for each row. Alternatively you can set the grid layout on the table row elements explicitly by using the `grid-column-template` property.
 
 ## Spacing and sizing
 
-### Margin
+### Space
 
-You can set margins as class variants using the following format: `margin-[property]-[variant]`.
+You can use the following CSS variables to setup a consistent spacing structure:
 
-**Properties**
+```
+--space-4xl: 4.5rem;
+--space-3xl: 3rem;
+--space-2xl: 2.5rem;
+--space-xl: 2rem;
+--space-l: 1.75rem;
+--space: 1.5rem;
+--space-s: 1rem;
+--space-xs: 0.75rem;
+--space-2xs: 0.5rem;
+--space-3xs: 0.25rem;
+--space-4xs: 0.125rem;
+```
 
-- top
-- bottom
-- left
-- right
-- horizontal (left + right)
-- vertical (top + bottom)
+### Font size
 
-If you don't specify a property, all margins will be set (top, bottom, left, right).
+You can use the following CSS variables to explicitly set font sizes:
 
-**Variants**
+```
+--font-size-4xl: 2.5rem;
+--font-size-3xl: 1.75rem;
+--font-size-2xl: 1.5rem;
+--font-size-xl: 1.25rem;
+--font-size-l: 1.125rem;
+--font-size: 1rem;
+--font-size-s: 0.875rem;
+--font-size-xs: 0.75rem;
+--font-size-2xs: 0.5rem;
+```
 
-- auto
-- xl
-- l
-- [normal is empty]
-- s
-- xs
-- zero
-
-**Examples**
-
-- `margin-horizontal-auto` - left and right auto
-- `margin-top` - normal top margin
-- `magin-xl` - extra large margin (top, left, right, bottom)
-- `margin-bottom-zero` - no bottom margin
-
-Margin size will be calculated based on your browser window size (it's responsive).
-
-### Padding
-
-Padding works exactly the same as margin (see above), except you have to write the padding keyword (obviously). 
-
-- `padding-top-xl` - extra large top padding
-- `padding-s` - small padding (top, bottom, left, right)
-- `padding-vertical-l` - large vertical padding (top, bottom)
-- `padding-top-zero` - no top padding
-
-### Size
-
-There are a few predefined size values available in Peacock CSS. Size values are NOT responsive, but they use pixel values.
-
-- auto - auto
-- full - 100% 
-- xl - 256px
-- l - 128px 
-- normal - 64px 
-- s - 32px 
-- xs - 16px
-- zero - 0px
-
-The following classes are available to specify width, height or both (size).
-
-**Width**
-
-- `size-width-auto`
-- `size-width-full`
-- `size-width-xl`
-- `size-width-l`
-- `size-width`
-- `size-width-s`
-- `size-width-xs`
-- `size-width-zero`
-
-**Height**
-
-- `size-height-auto`
-- `size-height-full`
-- `size-height-xl`
-- `size-height-l`
-- `size-height`
-- `size-height-s`
-- `size-height-xs`
-- `size-height-zero`
-
-**Size** (width + height)
-
-- `size-auto`
-- `size-full`
-- `size-xl`
-- `size-l`
-- `size`
-- `size-s`
-- `size-xs`
-- `size-zero`
-
-Sometimes you also want to display an element as a block when defining size, see the utilities section for more info.
 
 ## Form elements
 
@@ -643,7 +387,7 @@ Documentation is coming soon.
 
 - xl
 - l
-- normal
+- normal (without suffix)
 - s
 - xs
 
@@ -711,259 +455,105 @@ Colors may vary based on your interface color scheme (light mode, dark mode).
 
 The `color` proprety always refers to the foreground color of an element, the `background` class will set the background color value.
 
-**Gray**
+**Site colors**
 
-Gray color is available in six variations, they may vary based on your interface color scheme (light, dark)
+There are 4 major site color variables available to use: 
 
-- `color` 
-- `color-1`
-- `color-2`
-- `color-3`
-- `color-4`
-- `color-5`
-- `color-6`
+- `--color` 
+- `--color-1`
+- `--color-2`
+- `--color-3`
 
-It can be used as a background value as well.
+**Background colors**
 
-- `background`
-- `background-1`
-- `background-2`
-- `background-3`
-- `background-4`
-- `background-5`
-- `background-6`
+The following background color values are available to use: 
 
-There is an available accent variant for each color and background value. 
+- `--bg-color`
+- `--bg-color-1`
+- `--bg-color-2`
+- `--bg-color-3`
+- `--bg-color-4`
 
-- `color-accent` looks good with `background`
-- `color-1-accent` looks good with `background-1`
-- `color-2-accent` looks good with `background-2`
-- `color-3-accent` looks good with `background-3`
-- `color-4-accent` looks good with `background-4`
-- `color-5-accent` looks good with `background-5`
-- `color-6-accent` looks good with `background-6`
+**Background colors**
+
+The following text color values are available to use: 
+
+- `--text-color`
+- `--text-color-1`
+- `--text-color-2`
+- `--text-color-3`
 
 
-**Colors**
+**Other colors**
 
 The following color values are available for both light and dark mode with a slight difference (white and black are always white and black). 
 
-- white
-- black
-- blue
-- green
-- indigo
-- orange
-- pink
-- purple
-- red
-- teal
-- yellow
-- brown
-- gray
 
-Foreground color values
-
-- `color-white`
-- `color-black`
-- `color-blue`
-- `color-green`
-- `color-indigo`
-- `color-orange`
-- `color-pink`
-- `color-purple`
-- `color-red`
-- `color-teal`
-- `color-yellow`
-- `color-brown`
-- `color-gray`
-
-Background values
-
-- `background-white`
-- `background-black`
-- `background-blue`
-- `background-green`
-- `background-indigo`
-- `background-orange`
-- `background-pink`
-- `background-purple`
-- `background-red`
-- `background-teal`
-- `background-yellow`
-- `background-brown`
-- `background-gray`
-
+- `--white-color`
+- `--black-color`
+- `--blue-color`
+- `--green-color`
+- `--indigo-color`
+- `--orange-color`
+- `--pink-color`
+- `--purple-color`
+- `--red-color`
+- `--teal-color`
+- `--yellow-color`
+- `--brown-color`
+- `--gray-color`
 
 
 ## Utilities
 
 ### Menu
 
-Peacock CSS provides a responsive CSSS only hamburger menu by default.
+Peacock CSS provides a responsive CSS only hamburger menu and a secondary option menu by default.
 
 ```html
-<header>
-  <a href="/" id="logo">
-    <img src="images/logo-text.png">
-  </a>
+<div id="navigation">
+    <a id="site-logo" href="">
+        <img src="/images/logo.png">
+    </a>
+    
+    <nav id="primary-menu">
+        <input type="checkbox" id="primary-menu-button" name="menu-button" class="menu-button">
+        <label for="primary-menu-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </label>
+        <div class="menu-items">
+            <a href="" class="selected">Lorem</a>
+            <a href="">Ipsum</a>
+            <a href="">Dolor</a>
+            <a href="">Sit</a>
+            <a href="">Amet</a>
+        </div>
+    </nav>
 
-  <input type="checkbox" id="menu-button" class="selection-off" />
-  <label for="menu-button" id="menu-icon" class="selection-off"><span></span></label>
-
-  <nav class="nav">
-    <li><a href="#" class="selected">Lorem ipsum</a></li>
-    <li><a href="#">Lorem ipsum</a></li>
-    <li><a href="#">Lorem ipsum</a></li>
-    <li><a href="#">Lorem ipsum</a></li>
-    <li><a href="#">Lorem ipsum</a></li>
-  </nav>
-</header>
+    <nav id="secondary-menu">
+        <input type="checkbox" id="secondary-menu-button" name="menu-button" class="menu-button">
+        <label for="secondary-menu-button">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="1"></circle>
+                <circle cx="12" cy="5" r="1"></circle>
+                <circle cx="12" cy="19" r="1"></circle>
+            </svg>
+        </label>
+        <div class="menu-items right">
+            <a href="#">My account</a>
+            <a href="/">Logout</a>
+        </div>
+    </nav>
+</div>
 ```
 
 You can use the following HTML code to create a new menu.
 
-### Display
-
-You can set the display property of an element by using the following classes.
-
-- `display-block`
-- `display-inline`
-- `display-inline-block`
-- `display-none`
-
-For example: `<span class="display-block size-s margin text-align-center">💡</span>` 
-
-### Border radius
-
-It is possible to set the border radius of an element:
-
-- `border-radius-full` - 9999px
-- `border-radius-xl` 
-- `border-radius-l`
-- `border-radius`
-- `border-radius-s`
-- `border-radius-xs`
-- `border-radius-zero` - 0px
-
-Radius values are responsive, except the full and zero variants.
-
-### Shadow
-
-There are some default shadow and inner-shadow values that you can use to enhance elements. 
-
-**Shadow**
-
-- `shadow-full`
-- `shadow-xl`
-- `shadow-l`
-- `shadow`
-- `shadow-s`
-- `shadow-xs`
-- `shadow-zero` - removes every shadow (inner shadows too)
-
-**Inner shadow**
-
-- `inner-shadow-full`
-- `inner-shadow-xl`
-- `inner-shadow-l`
-- `inner-shadow`
-- `inner-shadow-s`
-- `inner-shadow-xs`
-
-Shadows are not responsive. 
-
-### Rotate
-
-You can rotate an element with the help of the rotation classes.
-
-**Values**
-
-- full - 90deg
-- xl - 60deg
-- l - 45deg
-- normal - 30 deg 
-- s - 15 deg
-- xs - 5deg
-
-**Left**
-
-- `rotate-left-full`
-- `rotate-left-xl`
-- `rotate-left-l`
-- `rotate-left`
-- `rotate-left-s`
-- `rotate-left-xs`
-
-**Right**
-
-- `rotate-right-full`
-- `rotate-right-xl`
-- `rotate-right-l`
-- `rotate-right`
-- `rotate-right-s`
-- `rotate-right-xs`
-
-**Reset**
-
-- `rotate-zero` - 0deg
-
-The rotate-zero class will reset the previous rotation back to zero degree.
-
-
-### Border
-
-There are solid style border variations for every direction (direction is optional) in different with variants:
-
-- `border-xl`
-- `border-l`
-- `border`
-- `border-s`
-- `border-xs`
-
-- `border-[direction]-xl`
-- `border-[direction]-l`
-- `border-[direction]`
-- `border-[direction]-s`
-- `border-[direction]-xs`
-
-Directions: `top`, `bottom`, `left`, `right`
-
-You can use the standard color values to set the color of the border, e.g.: 
-
-- `border-color-1`
-- `border-color-red`
-
-You can create a separator by combining the border classes:
-
-- `border-bottom-xs border-color-accent`
 
 ### Selection
 
 It is possible to display the selection from an element by using the `selection-off` class.
-
-### List style 
-
-It is possible to disable the list style markers by using the `list-style-off` class.
-
-## Custom color style
-
-You should override the following values to setup a custom style for your site (don't forget to update these values to support dark mode as well).
-
-```css
-body { color: #333333; background-color: #fafafa; }
-a { color: #006fff; }
-a:hover, a.selected:hover, a:visited:hover { color: #2ec04f; }
-a:visited { color: #4e4cd0; }
-a.selected { color: #a648d9; }
-input, textarea, select { color: #333333; background-color: #ffffff; border: 2px solid #e0e0e0; }
-input:focus, textarea:focus, select:focus { border: 2px solid #838383; }
-input[type=radio]:checked:after, input[type=checkbox]:checked:after, input[type=reset], input[type=submit], a.button, button { color: #ffffff; background-color: #006fff;}
-input[type=reset]:hover, input[type=submit]:hover, a.button:hover, button:hover { color: #ffffff; background-color: #2ec04f; }
-#menu-icon span, #menu-icon span:before, #menu-icon span:after { background-color: #e0e0e0; }
-thead tr { background-color: #ffffff; }
-
-@media (prefers-color-scheme: dark) {
-    /* use the same selectors for dark mode */
-}
-```

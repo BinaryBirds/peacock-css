@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover" />
+    
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    <title>Demo</title>
+
+    <link rel="manifest" href="/manifest.json">
+        
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/necolas/normalize.css@8.0.1/normalize.css">-->
+<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/binarybirds/peacock-css@1.0.0-beta.5/peacock.min.css">-->
+
+    <link rel="stylesheet" href="/css/peacock.css">
+            
+    #if(admin ?? false):
+    <link rel="stylesheet" href="/css/admin.css">
+    #endif
+
+</head>
+
+<body>
+
+    <header>
+        #inline("components/header")
+    </header>
+
+    #if(admin ?? false):
+    #inline("components/breadcrumb")
+    #endif
+    
+    <main>
+        #main()
+    </main>
+
+    <footer>
+        #inline("components/footer")
+    </footer>
+
+<!--    <script>-->
+<!--        function radioGroup(name, element) {-->
+<!--            document.getElementsByName(name).forEach((item) => {-->
+<!--                if (item !== element) { item.checked = false }-->
+<!--            })-->
+<!--        }-->
+<!--    </script>-->
+    
+</body>
+</html>

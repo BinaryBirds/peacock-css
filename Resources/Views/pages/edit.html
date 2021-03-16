@@ -1,0 +1,48 @@
+
+#let(admin = true)
+#define(main):
+
+<div class="lead container">
+
+    <div class="segment grid-2">
+        <a href="/">View variable</a>
+        <a href="/">Show metadata</a>
+    </div>
+    
+    <h1>Edit variable</h1>
+</div>
+
+<div class="container">
+
+<form>
+       <section>
+           <label>Key<span class="required">*</span> <span class="more">(e.g. /lorem/)</span></label>
+           <input type="text" placeholder="Key">
+            <span class="error">Lorem ipsum dolor sit amet</span>
+       </section>
+
+       <section>
+           <label>Details<span class="required">*</span></label>
+           <input type="text" placeholder="Details">
+       </section>
+
+       <section>
+           <label>Notes</label>
+           <textarea placeholder="Lorem ipsum"></textarea>
+       </section>
+
+       <section>
+           <input type="submit" value="Save variable">
+       </section>
+       
+       <section>
+           <a href="/" style="color: var(--red-color);">Delete variable</a>
+       </section>
+       
+       <p class="note">Fields marked with asterix (<span class="required">*</span>) are required.</p>
+</form>
+
+</div>
+#enddefine
+
+#inline("index")

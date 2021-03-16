@@ -1,0 +1,88 @@
+#define(main):
+<article>
+    <section class="lead container">
+        <h1>Building static and dynamic Swift libraries using the Swift compiler</h1>
+        <p>This tutorial is all about emitting various Swift binaries without the Swift package manager, but only using the Swift compiler.</p>
+        <div class="meta">
+            <span class="date">11/03/2021</span>
+            <div class="tags">
+                <span style="color: #DE2451;">Swift</span> ·
+                <span style="color: #DE2451;">Vapor</span>
+            </div>
+        </div>
+    </section>
+
+    <img src="/images/articles/01.jpg" style="border-radius: 0.5rem;">
+
+    <section class="container">
+
+            <p style="column-count: 1;">Lorem ipsum dolor sit amet, <a href="/">consectetur</a> adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. <a href="#">Sed sed egestas erat</a>. Nulla faucibus viverra leo, quis dignissim mauris tempor ut. Donec vulputate orci a faucibus rutrum. Quisque convallis, est ut lobortis ullamcorper, velit velit tristique lacus, nec sagittis mauris justo vulputate risus.</p>
+
+
+            <h2>h2 Compiling Swift source files</h2>
+            
+            <p>Lorem ipsum dolor sit amet, <sup>consectetur</sup> adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed <sub>egestas</sub> erat. Nulla faucibus viverra leo, quis dignissim mauris tempor ut. Donec vulputate orci a faucibus rutrum. Quisque convallis, est ut lobortis ullamcorper, velit velit tristique lacus, nec sagittis mauris justo vulputate risus.</p>
+
+            
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. </h2>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+            
+            <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh.</blockquote>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+
+            <h3>h3 Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+            
+<pre><code>function main() -> String {
+    return "Hello world"
+}
+</code></pre>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+            
+
+            <h4>h4 Lorem ipsum dolor sit amet</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat. Nulla faucibus viverra leo, quis dignissim mauris tempor ut. Donec vulputate orci a faucibus rutrum. Quisque convallis, est ut lobortis ullamcorper, velit velit tristique lacus, nec sagittis mauris justo vulputate risus.</p>
+
+            <p class="note">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+
+            <h5>h5 Lorem ipsum dolor sit amet</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+            
+            <p class="warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+
+            <h6>h6 Lorem ipsum dolor sit amet</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+
+            <p class="separator">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat. Nulla faucibus viverra leo, quis dignissim mauris tempor ut. Donec vulputate orci a faucibus rutrum. Quisque convallis, est ut lobortis ullamcorper, velit velit tristique lacus, nec sagittis mauris justo vulputate risus.</p>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. Vivamus gravida tempor porta. Pellentesque cursus, nisl quis maximus pulvinar, eros mi egestas ligula, id pharetra ex nisi a nibh. Sed sed egestas erat.</p>
+
+
+    </section>
+
+</article>
+
+<aside>
+    <div class="container center">
+        <hr>
+        <img src="/images/profile.jpg" class="profile">
+        <h3>Tibor Bödecs</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula quam vestibulum risus aliquet, non consectetur purus placerat. </p>
+        <nav>
+            <a href="/">Twitter</a> &middot;
+            <a href="/">Github</a>
+        </nav>
+    </div>
+</aside>
+
+#enddefine
+
+#inline("index")
